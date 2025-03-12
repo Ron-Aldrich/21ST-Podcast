@@ -442,16 +442,18 @@ nav .navlinks li a {
     margin: 0 auto;
 }
 
-/* Add a vintage filter to the video */
-video {
-    border-radius: 10px;
-    filter: sepia(0.4) contrast(1.2) brightness(0.9);
-    transition: filter 0.3s ease;
+.vintage-video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px; /* Limits the max width on larger screens */
+    margin: auto;
 }
 
-/* Hover effect to make the video more interactive */
-.vintage-video-container:hover video {
-    filter: sepia(0.6) contrast(1.5) brightness(1);
+.vintage-video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Ensures the correct aspect ratio */
 }
+
 
 
